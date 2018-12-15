@@ -14,4 +14,5 @@ public class RegisterNewUser {
         System.out.println(user.getEmail() + " " + user.getPassword());
         return  new ResponseEntity<User>(user, HttpStatus.OK);
     }
+    
 }
