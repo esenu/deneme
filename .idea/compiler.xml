@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="asd.asdasd.main" target="1.8" />
       <module name="asd.asdasd.test" target="1.8" />
+      <module name="asdasd.main" target="1.8" />
+      <module name="asdasd.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
