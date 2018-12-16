@@ -1,14 +1,24 @@
 package hello;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+@Entity
 public class User {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
 
     private String email;
     private String password;
 
     public User() {
+    }
+    public Long getId() {
+        return this.id;
     }
 
     public String getEmail() {
@@ -27,11 +37,5 @@ public class User {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "Value{" +
-                ", email='" + email +
-                ", password='" + password + '\'' +
-                '}';
-    }
+
 }

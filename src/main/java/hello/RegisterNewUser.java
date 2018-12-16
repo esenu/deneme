@@ -12,7 +12,7 @@ public class RegisterNewUser {
     @RequestMapping(value="/registerUser", method= RequestMethod.POST)
     public ResponseEntity<User> registerUser(@RequestBody User user){
         System.out.println(user.getEmail() + " " + user.getPassword());
-        return  new ResponseEntity<User>(user, HttpStatus.OK);
+        return new ResponseEntity<User>(user, HttpStatus.OK);
     }
 
 }
