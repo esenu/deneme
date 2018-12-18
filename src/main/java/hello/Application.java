@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan("endpoints")
 @ComponentScan("hello")
+@ComponentScan("SecurityTwo")
 public class Application {
 
 
